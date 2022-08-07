@@ -736,7 +736,9 @@ button{
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-
+.modal-form-field{
+    margin-bottom: 10px;
+}
 .modal-form-input:focus {
     outline: none;
     border-color: var(--accent-color);
@@ -745,12 +747,14 @@ button{
     fill: var(--accent-color);
 }
 .modal-form-input-desc{
+    display: block;
     font-family: var(--primary-font);
     font-weight: var(--normal-font);
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: #757575;
+    margin-bottom: 4px;
 }
 .modal-form-message{
     display: block;
@@ -759,14 +763,16 @@ button{
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    margin-top: 4px;
-    margin-bottom: 20px;
+    
     padding: 12px 16px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-message:focus{
     outline: none;
     border-color: var(--accent-color);
+}
+.modal-field-message{
+    margin-bottom: 20px;
 }
 .modal-form-check{
     display: inline;
@@ -800,8 +806,8 @@ button{
 .modal-form-input-wrapper{
     display: block;
     position: relative;
-    margin-top: 4px;
-    margin-bottom: 10px;
+    
+    
 }
 .modal-form-input-icon{
     position: absolute;
@@ -833,6 +839,10 @@ button{
 }
 .modal-form-check:focus + .modal-form-check-desc::before{
  outline: 2px solid var(--accent-color);
+}
+.link-policy{
+   
+    color: var(--accent-color);
 }
 /* ======================MODAL======================== */
 /*Portfolio*/
